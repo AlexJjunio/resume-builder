@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  background-color: #fdfdfd;
+}
+
+.page {
+  width: 794px;
+  height: 800px;
+
+  background-color: #e8e0e0;
+
+  padding: 10px;
+}
+
+#header {
+  width: 650px;
+  height: 320px;
+  border: 1px solid blue;
+  margin: auto ;
+  
+}
+
+#header h1 {
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+.page p {
+  text-align: center;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.box {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.box input {
+  margin-top: 7px;
+  padding: 10px;
+}
+
+#pdf-generator-btn {
+  padding: 15px;
+}
+

@@ -4,9 +4,51 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="/js/script.js" defer></script>
   <title>Document</title>
 </head>
 <body>
-  
+  <div id="box-to-gerenate-pdf">
+    <section class="page">
+      <div id="header">
+        <h1>Vamos iniciar pela coleta das informações pessoais</h1>
+        <form class="form" action="">
+          <div class="box box-name">
+            <label for="name">Nome</label>
+            <input placeholder="Alex" id="name" type="text">
+          </div>
+
+          <div class="box box-last-name">
+            <label for="last-name">Sobrenome</label>
+            <input placeholder="Moreira" id="last-name" type="text">
+          </div>
+
+          <div class="box box-address">
+            <label for="address">Localidade</label>
+            <input placeholder="Santa Luzia" id="address" type="text">
+          </div>
+
+          <div class="box box-postal-code">
+            <label for="postal-code">Código Postal</label>
+            <input placeholder="00000-000" id="postal-code" type="text">
+          </div>
+
+          <div class="box box-phone-number">
+            <label for="phone-number">Telefone</label>
+            <input placeholder="00 00000-0000" id="phone-number" type="text">
+          </div>
+
+          <div class="box box-email-address">
+            <label for="email-address">Endereço de E-mail</label>
+            <input placeholder="exemplo@gmail.com" id="email-address" type="email">
+          </div>
+        </form>
+      </div>
+      <p>Clique no botão abaixo para gerar um arquivo desse HTML.</p>
+    </section>
+  </div>
+  <button id="pdf-generator-btn">Gerar PDF</button>
 </body>
 </html>
